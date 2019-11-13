@@ -12,6 +12,6 @@ return false;
 }
 else{
 	alert("Username or password incorrect");
-	window.location = "page2.html"
+	window.location = "index.html"
 }
 }
