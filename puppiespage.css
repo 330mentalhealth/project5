@@ -1,0 +1,56 @@
+#Mainheading, #description {
+position: relative;
+text-align: center;
+
+}
+
+.fullbody{
+  background-image: linear-gradient(45deg, rgb(187, 125, 187), rgb(228, 116, 213));
+  width: 1000px;
+}
+
+.topnav{
+  position: relative;
+  width: 500px;
+  left:400px;
+  border: solid grey 2px;
+  padding-left: -20px;
+  background-color: white;
+}
+.puppyimages{
+
+}
+
+.picture{
+   background-color: white; 
+   border-radius: 25px;
+}
+
+.image {
+    width: 600px;
+    height: 600px;
+    position: relative;
+    
+}
+
+.imagedescription{
+
+
+}
+
+.picture{
+    position: relative;
+    left: 300px;
+    border: solid lightgrey 2px;
+    padding: 5px;
+    padding-left: 50px;
+    margin: 5px;
+    width: 700px;
+   
+}
+
+.footer{
+  text-align: center;
+  position: relative;
+  left: 100px;
+}
