@@ -1,0 +1,50 @@
+/* 
+	Global classes 
+					*/
+body {
+	background-repeat: no-repeat;
+	font-family: Helvetica, sans-serif;
+}
+
+/* 
+	Options 
+			*/
+
+.game-page{
+	text-align:center;
+	font-size: 40px;
+	color:black;
+}
+
+.game-container{
+	width: 600px;
+	margin: 20px;
+	font-size: 30px;
+	border-radius:20px;
+	color:white;
+	background-image: linear-gradient(purple 10%, white 40%);
+}
+
+.game-wrapper{
+	display:inline-flex;
+	height:500px;
+}
+
+.video{
+	width:550px;
+	height:300px;
+}
+
+.cover-pic{
+	height:60%;
+	width:75%;
+}
+
+.video-container{
+	width: 600px;
+	margin: 20px;
+	font-size: 30px;
+	border-radius:20px;
+	color:white;
+	background-image: linear-gradient(purple, white);
+}
