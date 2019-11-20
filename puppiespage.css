@@ -27,15 +27,21 @@ text-align: center;
 }
 
 .image {
-    width: 600px;
-    height: 600px;
+    width: 700px;
+    height: 750px;
     position: relative;
     
 }
 
-.imagedescription{
+.button{
+border: solid red 2px;
+border-radius: 7px;
+background-color: white;
+}
 
-
+.tomain{
+  position: relative;
+  bottom:80px;
 }
 
 .picture{
@@ -45,12 +51,12 @@ text-align: center;
     padding: 5px;
     padding-left: 50px;
     margin: 5px;
-    width: 700px;
+    width: 800px;
    
 }
 
 .footer{
   text-align: center;
   position: relative;
-  left: 100px;
+  left: 200px;
 }
