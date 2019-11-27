@@ -1,3 +1,4 @@
+<script src="./indexSally.js"></script>
 <html>
     <head>
         <title>Mental Health</title>
@@ -9,7 +10,12 @@
               <div class="head-bar">
                   <h1>Relax, Refresh, Reset</h1>
                   <p id="Welcome">Welcome, Sally!</p>
-                  <img class="profile-pic" src="images/sallyprofile.jpg" alt="profilepic"/>
+                  <div class="dropdown">
+                    <img onclick="myFunction()" class="dropbtn" src="images/sallyprofile.jpg" alt="profilepic"/>
+                    <div id="myDropdown" class="dropdown-content">
+                      <a href="./index.html">Logout</a>
+                    </div>
+                  </div>
               </div>
 
               <!--table for each album-->
@@ -19,7 +25,7 @@
                       <td><div class="options-wrapper">
                           <div class="option1-art">
                             <p>Cute Puppies!!</p>
-                            <a href="./puppiesSally.html"><img src="images/cutepuppies.jpg" alt="cutepuppies"></a>  
+                            <a href="./page3.html"><img src="images/cutepuppies.jpg" alt="cutepuppies"></a>  
                           </div>
                           
                       </div></td>
@@ -36,21 +42,20 @@
                       <td><div class="options-wrapper">
                           <div class="option3-art">
                               <p>Schedule Your Day</p>
-                              <a href="./Calendar.html"><img src="images/planner.jpg" alt="planning"></a>
+                              <a href="Calendar/CalendarSally.html"><img src="images/planner.jpg" alt="planning"></a>
                           </div>
                       </div></td>
                       <!--Option4-->
                       <td><div class="options-wrapper">
                           <div class="option4-art">
                               <p>Youtube/Movies/Games/Entertainment</p>
-                              <a href="./fork.html">
                               <img src="images/movie.jpg" alt="movie">
-                            </a>
                           </div>
                       </div></td>
                   </tr>
               </table>
         </div>
+        <script src="indexSally.js"></script>
    </body>
 </html>           
                                 

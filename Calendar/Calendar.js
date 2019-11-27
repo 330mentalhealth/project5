@@ -60,7 +60,7 @@ todayBtn.on("click", function() {
 dataCel.each(function() {
   if ($(this).data("day") === today) {
     $(this).addClass("isToday");
-    fillEventSidebar($(this));
+    fillEventSidebar($(this),true);
   }
 });
 
@@ -97,11 +97,14 @@ saveBtn.on("click", function() {
       if (inputNotes != null) {
         $(this).attr("data-notes", inputNotes);
       }
+      if (inputDate != null) {
+        $(this).attr("data-dates", inputDate);
+      }
       $(this).addClass("event");
       if (inputTag != null) {
         $(this).addClass("event--" + inputTag);
       }
-      fillEventSidebar($(this));
+      fillEventSidebar($(this),true);
     }
   });
 
@@ -111,10 +114,10 @@ saveBtn.on("click", function() {
 });
 
 //fill sidebar event info
-function fillEventSidebar(self) {
-  $(".c-aside__event").remove();
+function fillEventSidebar(self, remove_or_no) {
   var thisName = self.attr("data-name");
   var thisNotes = self.attr("data-notes");
+  var thisDate = self.attr("data-dates")
   var thisImportant = self.hasClass("event--important");
   var thisBirthday = self.hasClass("event--birthday");
   var thisFestivity = self.hasClass("event--festivity");
@@ -127,6 +130,8 @@ function fillEventSidebar(self) {
         thisName +
         " <span> • " +
         thisNotes +
+        " </span><span>" +
+        thisDate +
         "</span></p>"
       );
       break;
@@ -136,6 +141,8 @@ function fillEventSidebar(self) {
         thisName +
         " <span> • " +
         thisNotes +
+        " </span><span>" +
+        thisDate +
         "</span></p>"
       );
       break;
@@ -145,6 +152,8 @@ function fillEventSidebar(self) {
         thisName +
         " <span> • " +
         thisNotes +
+        " </span><span>" +
+        thisDate +
         "</span></p>"
       );
       break;
@@ -154,6 +163,8 @@ function fillEventSidebar(self) {
         thisName +
         " <span> • " +
         thisNotes +
+        " </span> • <span>" +
+        thisDate +
         "</span></p>"
       );
       break;
@@ -168,7 +179,7 @@ dataCel.on("click", function() {
   .attr("data-day")
   .slice(5, 7);
 
-  fillEventSidebar($(this));
+  // fillEventSidebar($(this),false);
 
   $(".c-aside__num").text(thisDay);
   $(".c-aside__month").text(monthText[thisMonth - 1]);
