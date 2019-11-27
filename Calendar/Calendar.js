@@ -105,6 +105,7 @@ saveBtn.on("click", function() {
         $(this).addClass("event--" + inputTag);
       }
       fillEventSidebar($(this),true);
+      clickCounter();
     }
   });
 
@@ -252,6 +253,16 @@ function buttonsPaginator(buttonId, mainClass, monthClass, next, prev) {
         return indexMonth;
       });
       break;
+  }
+}
+
+function clickCounter() {
+  if (typeof(Storage) !== "undefined") {
+    if (sessionStorage.clickcount) {
+      sessionStorage.clickcount = Number(sessionStorage.clickcount)+1;
+    } else {
+      sessionStorage.clickcount = 1;
+    }
   }
 }
 
