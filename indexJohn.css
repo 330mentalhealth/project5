@@ -21,6 +21,28 @@ body {
 	color: #585858;
 }
 
+
+.progress-wrapper{
+	align-items: center;
+	text-align: center;
+	margin-left: 200px;
+}
+.task-bar{
+	width:70%;
+}
+.star{
+	height:60px;
+	width:60px;
+	padding:10px;
+}
+
+.medals{
+	text-align: center;
+	align-items: center;
+	display:inline-block;
+	margin-left:475px;
+}
+
 .head-bar {
 	background-image: linear-gradient(to bottom right, #800080, #E6E6FA);
 	color: white;
