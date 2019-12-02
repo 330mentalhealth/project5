@@ -26,6 +26,12 @@ var saveBtn = $(".js-event__save");
 var closeBtn = $(".js-event__close");
 var winCreator = $(".js-event__creator");
 var inputDate = $(this).data();
+if (String(day).length == 1){
+  day = '0' + day;
+}
+if (String(month).length == 1){
+  month = '0' + month;
+}
 today = year + "-" + month + "-" + day;
 
 
